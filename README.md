@@ -68,7 +68,7 @@ rpc invoke success , hash=[1, -871958617, 32]
 
 这就是 一个最简单的一个Rpc例子. 
 
-其他可以参考我的    ： [Demo](https://github.com/Anthony-Dong/misc/tree/master/misc-rpc/src/test/test/com/misc/rpc)
+
 
 ## 框架设计原则
 
