@@ -16,8 +16,6 @@ import java.nio.charset.StandardCharsets;
 /**
  * todo
  *
- * @date: 2020-05-15
- * @author: <a href='mailto:fanhaodong516@qq.com'>Anthony</a>
  */
 public class NettyServer {
 

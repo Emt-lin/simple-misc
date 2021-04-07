@@ -88,6 +88,7 @@ public final class NettyClient<ProtoInBound, ProtoOutBound, ChannelInBound, Chan
 
     /**
      * 管道锁？？
+     * 模仿Netty里面高性能的写法。不用Object对象的wait()、notify()方法
      */
     private CountDownLatch channelLock = new CountDownLatch(1);
 

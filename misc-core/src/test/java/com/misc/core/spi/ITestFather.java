@@ -5,8 +5,6 @@ import com.misc.core.annotation.Primary;
 /**
  * TODO
  *
- * @date:2019/12/26 19:47
- * @author: <a href='mailto:fanhaodong516@qq.com'>Anthony</a>
  */
 @Primary
 public class ITestFather implements TestFather {

@@ -42,7 +42,7 @@ public class ServerHandler<INBOUND, OUTBOUND> extends ChannelDuplexHandler {
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         try {
-            // 乳沟我们没有线程池（客户端一般没有）
+            // 如果我们没有线程池（客户端一般没有）
             if(executor == null) {
                 logger.debug("[MISC] received {}", msg);
                 nettyEventListener.received(ctx.channel(), (INBOUND) msg);

@@ -52,7 +52,7 @@ public class RpcResponse implements Releasable {
     private transient Deserializer<Object, Class<?>> deserializer;
 
     /**
-     * 响应需要接收方 反序列化
+     * 响应需要接收方 序列化
      */
     private transient Serializer<Object> serializer;
 
@@ -129,7 +129,8 @@ public class RpcResponse implements Releasable {
 
         // return type
         if(resultType == null) {
-            resultType = resultType.getClass();
+            resultType = result.getClass();
+//            logger.warn("RpcResponse not set resultType , {} will set type {}",result, resultType);
         }
 
         setProperty(URL.Constants.RETURN_KEY, resultType.getName());

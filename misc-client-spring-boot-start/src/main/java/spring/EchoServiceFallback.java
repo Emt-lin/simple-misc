@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class EchoServiceFallback implements EchoService {
 
-    @Override
+
     public int[] hash(String str) {
         return new int[]{1, 2, 3};
     }

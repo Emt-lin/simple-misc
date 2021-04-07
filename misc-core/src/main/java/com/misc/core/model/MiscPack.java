@@ -1,7 +1,6 @@
 package com.misc.core.model;
 
 import com.alibaba.fastjson.annotation.JSONField;
-import io.netty.channel.ChannelHandlerContext;
 import org.msgpack.annotation.Index;
 import org.msgpack.annotation.Message;
 

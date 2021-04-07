@@ -28,7 +28,7 @@ public class ClientAPP {
 
         // 初始化
         ReferenceBean<EchoService> referenceBean = new ReferenceBean<>(EchoService.class);
-        referenceBean.setMethodPropertie(properties);
+//        referenceBean.setMethodPropertie(properties);
 
         // 设置注册中心
         referenceBean.setRegistryService(new ZKRegistryService());

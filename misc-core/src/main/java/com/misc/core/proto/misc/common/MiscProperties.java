@@ -1,6 +1,6 @@
 package com.misc.core.proto.misc.common;
 
-import com.misc.core.commons.PropertiesConstant;
+
 import com.misc.core.netty.NettyClient;
 import com.misc.core.netty.NettyServer;
 import com.misc.core.util.StringUtils;

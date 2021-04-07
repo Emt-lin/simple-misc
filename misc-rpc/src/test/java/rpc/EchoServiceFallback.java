@@ -7,8 +7,6 @@ import java.util.List;
 /**
  * todo
  *
- * @date: 2020-05-24
- * @author: <a href='mailto:fanhaodong516@qq.com'>Anthony</a>
  */
 public class EchoServiceFallback implements EchoService {
     @Override

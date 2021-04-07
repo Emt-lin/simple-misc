@@ -24,7 +24,7 @@ import static com.misc.core.commons.Constants.*;
  * @param <ChannelInBound>  处理的数据
  * @param <ChannelOutBound> 响应的数据
  *                          关系      ProtoInBound -> ChannelInBond
- *                                   ChannelInBound -> ProtoOutBound
+ *                                   ChannelOutBound -> ProtoOutBound
  *                          codecProvider 是提供编解码器 将 ProtoInBound 和 ProtoOutBound 解码
  */
 public final class NettyServer<ProtoInBound, ProtoOutBound, ChannelInBound, ChannelOutBound> implements NettyNode {
@@ -96,7 +96,8 @@ public final class NettyServer<ProtoInBound, ProtoOutBound, ChannelInBound, Chan
         }
         final ServerBootstrap serverBootstrap = new ServerBootstrap();
 
-        final ServerHandler<ChannelInBound, ChannelOutBound> serverHandler = new ServerHandler<>(threadPool.getExecutor(), nettyEventListener);
+        final ServerHandler<ChannelInBound, ChannelOutBound> serverHandler =
+                new ServerHandler<>(threadPool.getExecutor(), nettyEventListener);
         serverBootstrap
                 .group(bossGroup, workerGroup) // 添加组
                 .channel(NioServerSocketChannel.class)  // 添加管道

@@ -19,8 +19,6 @@ import java.util.stream.IntStream;
 /**
  * 客户端 ， 最好开启debug日志模式·
  *
- * @date: 2020-05-10
- * @author: <a href='mailto:fanhaodong516@qq.com'>Anthony</a>
  */
 public class ClientAPP {
 
@@ -40,7 +38,7 @@ public class ClientAPP {
 
         // 初始化 bean
         ReferenceBean<EchoService> referenceBean = new ReferenceBean<>(EchoService.class);
-        referenceBean.setMethodPropertie(properties);
+        referenceBean.setMethodProperties(properties);
         referenceBean.setRegistryService(registry);
         List<EchoService> echoServices = initBean(referenceBean, clients);
 

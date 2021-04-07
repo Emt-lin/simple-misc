@@ -31,8 +31,7 @@ public class InvokerInfo {
     private Object invokerTarget;
 
     /**
-     * key methodName
-     * value - key  java.lang.String, java.lang.Object, 没有就写NULL
+     * key methodName + "." + parameterTypes转换成String对象(比如：java.lang.String, java.lang.Object), 没有就写NULL
      * value - obj MethodInfo
      */
     private InvokerMethodMap invokerMethodMap = new InvokerMethodMap();
